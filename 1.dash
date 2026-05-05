@@ -1,0 +1,27 @@
+{
+  "title": "test-dash branch",
+  "widgets": {
+    "total-records": {
+      "id": "total-records",
+      "type": "scorecard",
+      "title": "Total Records",
+      "source": {
+        "sql": "SELECT count(*) from snowflake_learning_db.keliu.workspaces_feedback"
+      },
+      "valueColumn": "COUNT(*)"
+    }
+  },
+  "layout": {
+    "default": [
+      {
+        "w": 3,
+        "h": 2,
+        "x": 0,
+        "y": 0,
+        "i": "total-records",
+        "moved": false,
+        "static": false
+      }
+    ]
+  }
+}
